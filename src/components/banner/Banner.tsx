@@ -88,7 +88,7 @@ const Banner = () => {
 
               {/* CTA buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="flex items-center justify-center bg-button-color text-button-text gap-2 font-medium py-3 px-6 rounded-full transition-colors cursor-pointer">
+                <button className="flex items-center justify-center bg-button-color hover:bg-button-hover text-button-text gap-2 font-medium py-3 px-6 rounded-full transition-colors cursor-pointer">
                   Book Free Consultation
                   <ChevronRight />
                 </button>

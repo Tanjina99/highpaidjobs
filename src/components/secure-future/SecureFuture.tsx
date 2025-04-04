@@ -42,13 +42,13 @@ export default function SecureFuture() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="#book-call">
-                <Button className="flex items-center justify-center bg-button-color text-button-text gap-2 font-medium py-3 px-6 rounded-full transition-colors">
+                <Button className="flex items-center justify-center bg-button-color hover:bg-button-hover text-button-text gap-2 font-medium py-3 px-6 rounded-full transition-colors cursor-pointer">
                   Book a Free 15-Min Call <ChevronRight className="h-4 w-4" />
                 </Button>
               </Link>
 
               <Link href="#join-webinar">
-                <Button className="flex items-center justify-center gap-2 text-second-button-text border border-white/20 font-medium py-3 px-6 rounded-full transition-colors cursor-pointer">
+                <Button className="flex items-center justify-center gap-2 text-second-button-text border bg-white/30 border-white/20 font-medium py-3 px-6 rounded-full transition-colors cursor-pointer">
                   Join Next Webinar <ChevronRight className="h-4 w-4" />
                 </Button>
               </Link>

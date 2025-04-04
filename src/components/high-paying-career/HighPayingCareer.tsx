@@ -2,6 +2,9 @@ import React from "react";
 import CareerSteps from "./CareerSteps";
 import CareerTracks from "./CareerTracks";
 import Container from "@/util/Container";
+import { Button } from "../ui/button";
+import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const HighPayingCareer = () => {
   return (
@@ -26,6 +29,14 @@ const HighPayingCareer = () => {
             </div>
           </div>
         </Container>
+        <div className="flex justify-center mt-4">
+          <Link href="/career-tracks">
+            <Button className="flex items-center gap-1 bg-all-button hover:bg-all-button-hover text-all-button-text text-lg font-semibold py-1 px-4 rounded-full transition-colors duration-300 cursor-pointer">
+              Book Free Consultation
+              <ChevronRight className="translate-y-0.5" />
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );
