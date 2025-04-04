@@ -5,6 +5,7 @@ import { Check, ChevronRight, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { pathOptions, PricingPlan, pricingPlans } from "./jobData";
+import Container from "@/util/Container";
 
 export default function DreamJob() {
   const [selectedPath, setSelectedPath] = useState<string>(pathOptions[0].id);
@@ -21,7 +22,7 @@ export default function DreamJob() {
 
   return (
     <div className="flex items-center justify-center bg-background p-4 py-20">
-      <div className="container mx-auto">
+      <Container>
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-button-text">
             Choose Your Path to Land Your Dream Job
@@ -33,7 +34,7 @@ export default function DreamJob() {
         </div>
 
         <div className="grid md:grid-cols-[1fr_1.5fr] gap-6">
-          <div className="space-y-4">
+          <div className="space-y-4 ">
             {pathOptions.map((option) => {
               const Icon = option.icon;
               return (
@@ -42,8 +43,8 @@ export default function DreamJob() {
                   className={cn(
                     "w-full flex items-center gap-4 p-6 rounded-lg border border-gray-700 hover:border-blue-500 transition-colors",
                     selectedPath === option.id
-                      ? "border-blue-500 bg-[#2a2a2a]"
-                      : "bg-[#2a2a2a]"
+                      ? "border-blue-500 bg-foreground "
+                      : "bg-foreground "
                   )}
                   onMouseOver={() => setSelectedPath(option.id)}
                   onClick={() => setSelectedPath(option.id)}
@@ -77,7 +78,7 @@ export default function DreamJob() {
                   </div>
 
                   <div className="absolute bottom-8 left-0 right-0 flex justify-center">
-                    <Button className="bg-all-button hover:bg-all-button-hover text-all-button-text px-8 py-2 rounded-md flex items-center gap-2">
+                    <Button className="bg-all-button hover:bg-all-button-hover text-all-button-text px-8 py-2 rounded-md flex items-center gap-2 cursor-pointer">
                       {currentPlan.textForButton}
                       {getButtonIcon(currentPlan.textForButton)}
                     </Button>
@@ -87,7 +88,7 @@ export default function DreamJob() {
             })()}
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

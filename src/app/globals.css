@@ -16,7 +16,9 @@
   --color-career-number-text: var(--career-number-text);
   --color-career-banner: var(--career-banner);
   --color-black: var(--black);
-  --color-card: var(--card);
+  --color-why-choose-us: var(--why-choose-us);
+  --color-why-choose-us-text: var(--why-choose-us-text);
+  --color-piricing-card: var(--piricing-card);
 }
 
 @theme inline {
@@ -108,6 +110,9 @@
   --black: #000;
   --success-stories-bg: #0f172a;
   --card: #162033;
+  --why-choose-us: #e8edfd;
+  --why-choose-us-text: #0736cf;
+  --piricing-card: #f3f5f7;
 }
 
 .dark {
@@ -156,6 +161,9 @@
   --career-banner: #0736cf;
   --black: #fff;
   --card: #ffffff;
+  --why-choose-us: #5c5958;
+  --why-choose-us-text: #d6d6d6;
+  --piricing-card: #434345;
 }
 
 @layer base {

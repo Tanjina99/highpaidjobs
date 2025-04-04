@@ -1,10 +1,11 @@
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Container from "@/util/Container";
 
 export default function SuccessStories() {
   return (
-    <div className=" bg-[#0F172A]">
-      <div className="container mx-auto px-4 py-12 text-center">
+    <div className=" bg-[#0F172A] px-4 py-12 text-center">
+      <Container>
         <div className="flex justify-center gap-4">
           <span className="text-white uppercase text-sm tracking-wider mb-2 px-2 py-1 rounded-full bg-[#1E293B]">
             REAL STORIES
@@ -166,10 +167,10 @@ export default function SuccessStories() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className="flex justify-center mt-4 pb-10">
-        <Button className="text-slate-900 rounded-full bg-yellow-400 hover:bg-yellow-500">
+      <div className="flex justify-center mt-8 pb-2">
+        <Button className="text-slate-900 rounded-full bg-yellow-400 hover:bg-yellow-500 cursor-pointer">
           Book Free Consultation
         </Button>
       </div>

@@ -39,32 +39,30 @@ export default function CareerRoadmap() {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto p-6 font-sans">
-      <div className="relative">
-        {steps.map((step, index) => (
-          <div key={index} className="flex mb-12 relative">
-            {/* Vertical line */}
-            {index < steps.length - 1 && (
-              <div className="absolute left-[29px] top-[60px] w-[2px] h-[calc(100%+12px)] bg-dashed border-l-2 border-dashed border-gray-200 z-0"></div>
-            )}
+    <div className="relative">
+      {steps.map((step, index) => (
+        <div key={index} className="flex mb-12 relative">
+          {/* Vertical line */}
+          {index < steps.length - 1 && (
+            <div className="absolute left-[29px] top-[60px] w-[2px] h-[calc(100%+12px)] bg-dashed border-l-2 border-dashed border-gray-200 z-0"></div>
+          )}
 
-            {/* Number circle */}
-            <div className="flex-shrink-0 z-10">
-              <div className="flex items-center justify-center w-[58px] h-[58px] rounded-full bg-career-number text-career-number-text font-bold text-xl">
-                {step.number}
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="ml-8 mt-4">
-              <h3 className="text-xl font-semibold text-black mb-2">
-                {step.title}
-              </h3>
-              <p className="text-p-text">{step.description}</p>
+          {/* Number circle */}
+          <div className="flex-shrink-0 z-10">
+            <div className="flex items-center justify-center w-[58px] h-[58px] rounded-full bg-career-number text-career-number-text font-bold text-xl">
+              {step.number}
             </div>
           </div>
-        ))}
-      </div>
+
+          {/* Content */}
+          <div className="ml-8 mt-4">
+            <h3 className="text-xl font-semibold text-black mb-2">
+              {step.title}
+            </h3>
+            <p className="text-p-text">{step.description}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

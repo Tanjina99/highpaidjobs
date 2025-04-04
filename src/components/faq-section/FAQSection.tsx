@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import Container from "@/util/Container";
 import { ChevronRight } from "lucide-react";
 
 export default function FAQSection() {
@@ -14,14 +15,14 @@ export default function FAQSection() {
     <div className=" px-4 py-16 bg-background">
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold mb-2 text-black">
-          Got Questions? We've Got Answers
+          Got Questions? We&apos;ve Got Answers
         </h2>
-        <p className="text-lg text-gray-700">
+        <p className="text-lg text-p-text">
           Find answers to our most frequently asked questions
         </p>
       </div>
 
-      <div className="container mx-auto">
+      <Container>
         <Accordion type="single" collapsible className="space-y-4">
           <AccordionItem
             value="item-1"
@@ -34,9 +35,8 @@ export default function FAQSection() {
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4 text-black">
               <p>
-                Our graduates typically find employment within 3-6 months after
-                completing the program. The exact timeline depends on your
-                skills, location, and the current job market.
+                Job placement only: 8 weeks. Boot camp + placement: 10-12 weeks
+                of training + 4-6 weeks to an offer.
               </p>
             </AccordionContent>
           </AccordionItem>
@@ -47,15 +47,15 @@ export default function FAQSection() {
           >
             <AccordionTrigger className="px-6 py-4 hover:no-underline">
               <span className="text-base font-medium text-black">
-                What if I don't get hired?
+                What if I don&apos;t get hired?
               </span>
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-4">
               <p className="text-black">
                 We offer ongoing career support and job placement assistance. If
-                you don't find a job within a reasonable timeframe, we provide
-                additional training and resources to enhance your skills and
-                marketability.
+                you don&apos;t find a job within a reasonable timeframe, we
+                provide additional training and resources to enhance your skills
+                and marketability.
               </p>
             </AccordionContent>
           </AccordionItem>
@@ -91,7 +91,7 @@ export default function FAQSection() {
             <AccordionContent className="px-6 pb-4">
               <p className="text-black">
                 Our program is designed for individuals looking to start or
-                advance their career in the tech industry. Whether you're a
+                advance their career in the tech industry. Whether you&apos;re a
                 complete beginner or looking to upskill, our curriculum can be
                 tailored to your experience level and career goals.
               </p>
@@ -135,10 +135,10 @@ export default function FAQSection() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-      </div>
+      </Container>
 
       <div className="text-center mt-12">
-        <p className="text-lg mb-4 text-p-text">
+        <p className="mb-4 text-p-text">
           Have more questions? Ask us during your FREE consultation!
         </p>
         <Button className="bg-all-button hover:bg-all-button-hover text-all-button-text text-lg font-semibold py-1 px-4 rounded-full transition-colors duration-300 cursor-pointer">
