@@ -9,6 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Container from "@/util/Container";
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 export default function FAQSection() {
   return (
@@ -141,10 +142,16 @@ export default function FAQSection() {
         <p className="mb-4 text-p-text">
           Have more questions? Ask us during your FREE consultation!
         </p>
-        <Button className="bg-all-button hover:bg-all-button-hover text-all-button-text text-lg font-semibold py-1 px-4 rounded-full transition-colors duration-300 cursor-pointer">
-          Book Free Consultation
-          <ChevronRight className="ml-2 h-5 w-5" />
-        </Button>
+        <Link href="#contactForm">
+          <div className="flex justify-center">
+            <Button className="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium bg-all-button hover:bg-all-button-hover text-all-button-text py-2 px-6 rounded-full transition-colors duration-300 cursor-pointer">
+              <span className="flex items-center">
+                Book Free Consultation
+                <ChevronRight className="ml-2 h-5 w-5 translate-x-0.5" />
+              </span>
+            </Button>
+          </div>
+        </Link>
       </div>
     </div>
   );

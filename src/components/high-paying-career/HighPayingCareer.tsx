@@ -30,7 +30,7 @@ const HighPayingCareer = () => {
           </div>
         </Container>
         <div className="flex justify-center mt-4">
-          <Link href="/career-tracks">
+          <Link href="#contactForm">
             <Button className="flex items-center gap-1 bg-all-button hover:bg-all-button-hover text-all-button-text text-lg font-semibold py-1 px-4 rounded-full transition-colors duration-300 cursor-pointer">
               Book Free Consultation
               <ChevronRight className="translate-y-0.5" />

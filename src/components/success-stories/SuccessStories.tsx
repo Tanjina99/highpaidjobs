@@ -1,6 +1,7 @@
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Container from "@/util/Container";
+import Link from "next/link";
 
 export default function SuccessStories() {
   return (
@@ -170,9 +171,11 @@ export default function SuccessStories() {
       </Container>
 
       <div className="flex justify-center mt-8 pb-2">
-        <Button className="text-slate-900 rounded-full bg-yellow-400 hover:bg-yellow-500 cursor-pointer">
-          Book Free Consultation
-        </Button>
+        <Link href="#contactForm">
+          <Button className="text-slate-900 rounded-full bg-yellow-400 hover:bg-yellow-500 cursor-pointer">
+            Book Free Consultation
+          </Button>
+        </Link>
       </div>
     </div>
   );

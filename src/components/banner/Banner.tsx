@@ -2,6 +2,8 @@ import Container from "@/util/Container";
 import { ChevronRight, Flame } from "lucide-react";
 import Image from "next/image";
 import Navbar from "../Navbar";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -88,14 +90,18 @@ const Banner = () => {
 
               {/* CTA buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="flex items-center justify-center bg-button-color hover:bg-button-hover text-button-text gap-2 font-medium py-3 px-6 rounded-full transition-colors cursor-pointer">
-                  Book Free Consultation
-                  <ChevronRight />
-                </button>
-                <button className="flex items-center justify-center gap-2 text-second-button-text border border-white/20 font-medium py-3 px-6 rounded-full transition-colors cursor-pointer">
-                  Join Next Webinar
-                  <ChevronRight />
-                </button>
+                <Link href="#contactForm">
+                  <Button className="flex items-center justify-center bg-button-color hover:bg-button-hover text-button-text gap-2 font-medium py-3 px-6 rounded-full transition-colors cursor-pointer">
+                    Book Free Consultation
+                    <ChevronRight />
+                  </Button>
+                </Link>
+                <Link href="#contactForm">
+                  <Button className="flex items-center justify-center gap-2 text-second-button-text border border-white/20 font-medium py-3 px-6 rounded-full transition-colors cursor-pointer">
+                    Join Next Webinar
+                    <ChevronRight />
+                  </Button>
+                </Link>
               </div>
             </div>
 

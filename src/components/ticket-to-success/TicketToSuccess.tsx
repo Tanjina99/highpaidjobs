@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Container from "@/util/Container";
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 export default function JobPlacementUI() {
   return (
@@ -301,10 +302,12 @@ export default function JobPlacementUI() {
         </div>
 
         <div className="mt-12 flex justify-center text-center">
-          <Button className="flex items-center gap-1 bg-all-button hover:bg-all-button-hover text-all-button-text text-lg font-semibold py-1 px-4 rounded-full transition-colors duration-300 cursor-pointer">
-            Book Free Consultation
-            <ChevronRight className="translate-y-0.5" />
-          </Button>
+          <Link href="#contactForm">
+            <Button className="flex items-center gap-1 bg-all-button hover:bg-all-button-hover text-all-button-text text-lg font-semibold py-1 px-4 rounded-full transition-colors duration-300 cursor-pointer">
+              Book Free Consultation
+              <ChevronRight className="translate-y-0.5" />
+            </Button>
+          </Link>
         </div>
       </Container>
     </div>

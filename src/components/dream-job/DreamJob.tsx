@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { pathOptions, PricingPlan, pricingPlans } from "./jobData";
 import Container from "@/util/Container";
+import Link from "next/link";
 
 export default function DreamJob() {
   const [selectedPath, setSelectedPath] = useState<string>(pathOptions[0].id);
@@ -78,10 +79,12 @@ export default function DreamJob() {
                   </div>
 
                   <div className="absolute bottom-8 left-0 right-0 flex justify-center">
-                    <Button className="bg-all-button hover:bg-all-button-hover text-all-button-text px-8 py-2 rounded-md flex items-center gap-2 cursor-pointer">
-                      {currentPlan.textForButton}
-                      {getButtonIcon(currentPlan.textForButton)}
-                    </Button>
+                    <Link href="#contactForm">
+                      <Button className="bg-all-button hover:bg-all-button-hover text-all-button-text px-8 py-2 rounded-md flex items-center gap-2 cursor-pointer">
+                        {currentPlan.textForButton}
+                        {getButtonIcon(currentPlan.textForButton)}
+                      </Button>
+                    </Link>
                   </div>
                 </>
               );

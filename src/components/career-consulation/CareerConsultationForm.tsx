@@ -35,7 +35,10 @@ export default function CareerConsultationForm() {
   return (
     <div className="py-10 bg-background">
       <Container>
-        <div className=" p-8 rounded-lg bg-[#FFFFFF] dark:bg-[#303030]">
+        <div
+          id="contactForm"
+          className=" p-8 rounded-lg bg-[#FFFFFF] dark:bg-[#303030]"
+        >
           <h1 className="tracking-tight text-base md:text-lg lg:text-2xl text-black font-bold">
             Book a FREE Career Consultation
           </h1>
@@ -217,7 +220,7 @@ export default function CareerConsultationForm() {
             <div className="flex justify-center">
               <Button
                 type="submit"
-                className="px-8 py-2 bg-all-button hover:bg-all-button-hover text-all-button-text text-lg font-semibold cursor-pointer"
+                className="px-6 py-2 bg-all-button hover:bg-all-button-hover text-all-button-text text-sm font-semibold cursor-pointer"
               >
                 Submit
               </Button>

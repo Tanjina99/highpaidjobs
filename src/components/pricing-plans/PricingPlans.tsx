@@ -19,7 +19,7 @@ export default function PricingPlans() {
           <div className="rounded-lg bg-piricing-card border shadow-sm p-6 flex flex-col h-full">
             <div className="mb-6">
               <h2 className="font-bold text-black">Plan: Starter</h2>
-              <p className="text-black text-sm">Quick 30 min interview</p>
+              <p className="text-black text-xs">Quick 30 min interview</p>
             </div>
 
             <div className="mb-6">
@@ -158,7 +158,7 @@ export default function PricingPlans() {
           {/* Essential Plan */}
           <div className="rounded-lg border bg-blue-600 text-white shadow-sm p-6 relative flex flex-col h-full">
             <div className="absolute top-10 -right-2">
-              <span className="bg-[#F6A934] text-xs md:text-sm font-medium text-black px-3 py-1 rounded-t rounded-bl">
+              <span className="bg-[#F6A934] text-sm md:text-sm font-medium text-black px-3 py-1 rounded-t rounded-bl">
                 Most Popular
               </span>
               <div className="absolute top-6 md:top-6 right-0">
@@ -185,8 +185,8 @@ export default function PricingPlans() {
 
             <div className="mb-6">
               <h2 className="font-bold text-white">Plan: Essential</h2>
-              <p className="text-sm text-blue-200">
-                60 min technical interview and resume assessment
+              <p className="text-xs text-blue-200">
+                60 min technical interview and resume <br /> assessment
               </p>
             </div>
 
@@ -314,7 +314,7 @@ export default function PricingPlans() {
           <div className="rounded-lg bg-piricing-card border shadow-sm p-6 flex flex-col h-full">
             <div className="mb-6">
               <h2 className="font-bold text-black">Plan: Premium</h2>
-              <p className="text-black text-sm">
+              <p className="text-black text-xs">
                 Interview, resume and current job application assessment
               </p>
             </div>
@@ -326,7 +326,7 @@ export default function PricingPlans() {
               <div className="flex items-baseline">
                 <span className="text-4xl font-bold text-black">$149.99</span>
               </div>
-              <p className="bg-piricing-card text-black text-sm">
+              <p className="bg-piricing-card text-black text-xs">
                 Upfront deposit, $149.99 installment for 24 months: Interest
                 FREE
               </p>

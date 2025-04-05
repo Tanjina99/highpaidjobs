@@ -1,6 +1,7 @@
 import { Check, ChevronRight, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Container from "@/util/Container";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
   return (
@@ -15,7 +16,7 @@ export default function WhyChooseUs() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Feature 1 */}
-          <div className="bg-foreground rounded-lg p-6 flex flex-col h-full ">
+          <div className="bg-foreground rounded-lg p-6 pb-3 flex flex-col h-[310px] shadow">
             <div className="text-cyan-400 mb-4">
               <svg
                 width="43.750000"
@@ -53,41 +54,43 @@ export default function WhyChooseUs() {
                 ></path>
               </svg>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-black">
+            <h3 className="text-base font-bold mb-2 text-black">
               Guaranteed Job Placement
             </h3>
-            <p className="text-p-text mb-4 text-md max-w-[150px] md:max-w-[260px]">
+            <p className="text-p-text mb-4 text-sm max-w-[150px] md:max-w-[260px]">
               We guarantee you&apos;ll get hired or we keep working with you for
               free
             </p>
 
             <div className="grid grid-cols-2 gap-3 mb-4">
-              <div className="bg-background rounded flex flex-col items-center justify-center py-3 px-4">
-                <span className="mb-2 text-[15px] font-semibold text-black">
+              <div className="bg-background flex flex-col items-center justify-center p-1 md:px-3 md:py-2 rounded shadow border">
+                <p className="text-black font-semibold text-[10px] md:text-sm mb-1">
                   HighPaidJobs
-                </span>
+                </p>
                 <div className="bg-blue-600 rounded-full p-1">
                   <Check className="w-4 h-4" />
                 </div>
               </div>
 
-              <div className="bg-background rounded flex flex-col items-center justify-center py-2 px-3 w-auto">
-                <span className="mb-1 text-md font-semibold text-black">
-                  Others
-                </span>
+              <div className="bg-background rounded shadow border flex flex-col items-center justify-center py-1 px-2 w-auto">
+                <p className="mb-1 text-md font-semibold text-black">Others</p>
                 <div className="bg-red-600 rounded-full p-1">
                   <X className="w-4 h-4" />
                 </div>
               </div>
             </div>
 
-            <div className="bg-why-choose-us rounded py-2 px-4 text-sm text-why-choose-us-text text-start">
-              99.99% success rate within 8-16 weeks
+            <hr className="bg-[#323232] mb-2 -mt-2" />
+
+            <div className="bg-why-choose-us rounded py-2 px-4 text-xs text-why-choose-us-text text-start shadow font-semibold mb-0">
+              <span className="text-[10px]">
+                99.99% success rate within 8-16 weeks
+              </span>
             </div>
           </div>
 
           {/* Feature 2 */}
-          <div className="bg-foreground rounded-lg p-6 flex flex-col h-full">
+          <div className="bg-foreground rounded-lg p-6 pb-3 flex flex-col h-[310px] shadow">
             <div className="text-cyan-400 mb-4">
               <svg
                 width="50.000000"
@@ -125,39 +128,41 @@ export default function WhyChooseUs() {
                 ></path>
               </svg>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-black">
+            <h3 className="text-base font-bold mb-2 text-black">
               Hyper Personalized Coaching
             </h3>
-            <p className="text-p-text mb-4 text-md max-w-[150px] md:max-w-[260px]">
+            <p className="text-p-text mb-4 text-sm max-w-[150px] md:max-w-[260px]">
               One-on-one instruction tailored to your learning style
             </p>
 
             <div className="grid grid-cols-2 gap-3 mb-4">
-              <div className="bg-background rounded flex flex-col items-center justify-center py-3 px-4">
-                <span className="mb-2 text-[15px] font-semibold text-black">
+              <div className="bg-background flex flex-col items-center justify-center p-1 md:px-3 md:py-2 rounded shadow border">
+                <p className="text-black font-semibold text-[10px] md:text-sm mb-1">
                   HighPaidJobs
-                </span>
+                </p>
                 <div className="bg-blue-600 rounded-full p-1">
                   <Check className="w-4 h-4" />
                 </div>
               </div>
-              <div className="bg-background rounded flex flex-col items-center justify-center py-3 px-4">
-                <span className="mb-2 text-[15px] font-semibold text-black">
-                  Others
-                </span>
+              <div className="bg-background rounded shadow border flex flex-col items-center justify-center py-1 px-2 w-auto">
+                <p className="mb-1 text-md font-semibold text-black">Others</p>
                 <div className="bg-red-600 rounded-full p-1">
                   <X className="w-4 h-4" />
                 </div>
               </div>
             </div>
 
-            <div className="bg-why-choose-us rounded py-2 px-4 text-sm text-why-choose-us-text text-start">
-              Dedicated mentor throughout your journey
+            <hr className="bg-[#323232] mb-2 -mt-2" />
+
+            <div className="bg-why-choose-us rounded py-2 px-4 text-xs text-why-choose-us-text text-start shadow font-semibold mb-0">
+              <span className="text-[10px]">
+                Dedicated mentor throughout your journey
+              </span>
             </div>
           </div>
 
           {/* Feature 3 */}
-          <div className="bg-foreground rounded-lg p-6 flex flex-col h-full">
+          <div className="bg-foreground rounded-lg p-6 pb-3 flex flex-col h-[310px] shadow">
             <div className="text-cyan-400 mb-4">
               <svg
                 width="50.000000"
@@ -195,40 +200,42 @@ export default function WhyChooseUs() {
                 ></path>
               </svg>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-black">
+            <h3 className="text-base font-bold mb-2 text-black">
               Interview Support
             </h3>
-            <p className="text-p-text mb-4 text-md max-w-[150px] md:max-w-[260px]">
+            <p className="text-p-text mb-4 text-sm max-w-[150px] md:max-w-[260px]">
               Expert guidance during the entire interview process
             </p>
 
             <div className="grid grid-cols-2 gap-3 mb-4">
-              <div className="bg-background rounded flex flex-col items-center justify-center py-3 px-4">
-                <span className="mb-2 text-[15px] font-semibold text-black">
+              <div className="bg-background flex flex-col items-center justify-center p-1 md:px-3 md:py-2 rounded shadow border">
+                <p className="text-black font-semibold text-[10px] md:text-sm mb-1">
                   HighPaidJobs
-                </span>
+                </p>
                 <div className="bg-blue-600 rounded-full p-1">
                   <Check className="w-4 h-4" />
                 </div>
               </div>
 
-              <div className="bg-background rounded flex flex-col items-center justify-center py-2 px-3 w-auto">
-                <span className="mb-1 text-md font-semibold text-black">
-                  Others
-                </span>
+              <div className="bg-background rounded shadow border flex flex-col items-center justify-center py-1 px-2 w-auto">
+                <p className="mb-1 text-md font-semibold text-black">Others</p>
                 <div className="bg-red-600 rounded-full p-1">
                   <X className="w-4 h-4" />
                 </div>
               </div>
             </div>
 
-            <div className="bg-why-choose-us rounded py-2 px-4 text-sm text-why-choose-us-text text-start">
-              We join your interviews to help you succeed
+            <hr className="bg-[#323232] mb-2 -mt-2" />
+
+            <div className="bg-why-choose-us rounded py-2 px-4 text-xs text-why-choose-us-text text-start shadow font-semibold mb-0">
+              <span className="text-[10px]">
+                We join your interviews to help you succeed
+              </span>
             </div>
           </div>
 
           {/* Feature 4 */}
-          <div className="bg-foreground rounded-lg p-6 flex flex-col h-full">
+          <div className="bg-foreground rounded-lg p-6 pb-3 flex flex-col h-[310px] shadow">
             <div className="text-cyan-400 mb-4">
               <svg
                 width="48.513672"
@@ -266,39 +273,42 @@ export default function WhyChooseUs() {
                 ></path>
               </svg>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-black">
+            <h3 className="text-base font-bold mb-2 text-black">
               Post-Hire Support
             </h3>
-            <p className="text-p-text mb-4 text-md max-w-[150px] md:max-w-[260px]">
+            <p className="text-p-text mb-4 text-sm max-w-[150px] md:max-w-[260px]">
               Continued assistance after you land your job
             </p>
 
             <div className="grid grid-cols-2 gap-3 mb-4">
-              <div className="bg-background rounded flex flex-col items-center justify-center py-3 px-4">
-                <span className="mb-2 text-[15px] font-semibold text-black">
+              <div className="bg-background flex flex-col items-center justify-center p-1 md:px-3 md:py-2 rounded shadow border">
+                <p className="text-black font-semibold text-[10px] md:text-sm mb-1">
                   HighPaidJobs
-                </span>
+                </p>
                 <div className="bg-blue-600 rounded-full p-1">
                   <Check className="w-4 h-4" />
                 </div>
               </div>
 
-              <div className="bg-background rounded flex flex-col items-center justify-center py-2 px-3 w-auto">
-                <span className="mb-1 text-md font-semibold text-black">
-                  Others
-                </span>
+              <div className="bg-background rounded shadow border flex flex-col items-center justify-center py-1 px-2 w-auto">
+                <p className="mb-1 text-md font-semibold text-black">Others</p>
                 <div className="bg-red-600 rounded-full p-1">
                   <X className="w-4 h-4" />
                 </div>
               </div>
             </div>
-            <div className="bg-why-choose-us rounded py-2 px-4 text-sm text-why-choose-us-text text-start">
-              Full support during probation period to help your job sustain
+
+            <hr className="bg-[#323232] mb-2 -mt-2" />
+
+            <div className="bg-why-choose-us rounded py-2 px-4 text-xs text-why-choose-us-text text-start shadow font-semibold mb-0">
+              <span className="text-[10px]">
+                Full support during probation period to help your job sustain
+              </span>
             </div>
           </div>
 
           {/* Feature 5 */}
-          <div className="bg-foreground rounded-lg p-6 flex flex-col h-full">
+          <div className="bg-foreground rounded-lg p-6 pb-3 flex flex-col h-[310px] shadow">
             <div className="text-cyan-400 mb-4">
               <svg
                 width="43.522949"
@@ -336,40 +346,42 @@ export default function WhyChooseUs() {
                 ></path>
               </svg>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-black">
+            <h3 className="text-base font-bold mb-2 text-black">
               Decided Salary Renegotiation
             </h3>
-            <p className="text-p-text mb-4 text-md max-w-[150px] md:max-w-[260px]">
+            <p className="text-p-text mb-4 text-sm max-w-[150px] md:max-w-[260px]">
               Expert techniques to maximize your compensation
             </p>
 
             <div className="grid grid-cols-2 gap-3 mb-4">
-              <div className="bg-background rounded flex flex-col items-center justify-center py-3 px-4">
-                <span className="mb-2 text-[15px] font-semibold text-black">
+              <div className="bg-background flex flex-col items-center justify-center p-1 md:px-3 md:py-2 rounded shadow border">
+                <p className="text-black font-semibold text-[10px] md:text-sm mb-1">
                   HighPaidJobs
-                </span>
+                </p>
                 <div className="bg-blue-600 rounded-full p-1">
                   <Check className="w-4 h-4" />
                 </div>
               </div>
 
-              <div className="bg-background rounded flex flex-col items-center justify-center py-2 px-3 w-auto">
-                <span className="mb-1 text-md font-semibold text-black">
-                  Others
-                </span>
+              <div className="bg-background rounded shadow border flex flex-col items-center justify-center py-1 px-2 w-auto">
+                <p className="mb-1 text-md font-semibold text-black">Others</p>
                 <div className="bg-red-600 rounded-full p-1">
                   <X className="w-4 h-4" />
                 </div>
               </div>
             </div>
 
-            <div className="bg-why-choose-us rounded py-2 px-4 text-sm text-start text-why-choose-us-text">
-              Average $5-10k increase in offers
+            <hr className="bg-[#323232] mb-2 -mt-2" />
+
+            <div className="bg-why-choose-us rounded py-2 px-4 text-xs text-wrap text-why-choose-us-text text-start font-semibold shadow">
+              <span className="text-[10px] ">
+                Average $5-10k increase in offers
+              </span>
             </div>
           </div>
 
           {/* Feature 6 */}
-          <div className="bg-foreground rounded-lg p-6 flex flex-col h-full">
+          <div className="bg-foreground rounded-lg p-6 pb-3 flex flex-col h-[310px] shadow">
             <div className="text-cyan-400 mb-4">
               <svg
                 width="42.259277"
@@ -407,47 +419,55 @@ export default function WhyChooseUs() {
                 ></path>
               </svg>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-black ">
+            <h3 className="text-base font-bold mb-2 text-black ">
               100% Money-Back Guarantee
             </h3>
-            <p className="text-p-text mb-4 text-md max-w-[150px] md:max-w-[260px]">
+            <p className="text-p-text mb-4 text-sm max-w-[150px] md:max-w-[260px]">
               15 day money back guarantee, a risk-free investment!
             </p>
 
             <div className="grid grid-cols-2 gap-3 mb-4">
-              <div className="bg-background rounded flex flex-col items-center justify-center py-3 px-4">
-                <span className="mb-2 text-[15px] font-semibold text-black">
+              <div className="bg-background flex flex-col items-center justify-center p-1 md:px-3 md:py-2 rounded shadow border">
+                <p className="text-black font-semibold text-[10px] md:text-sm mb-1">
                   HighPaidJobs
-                </span>
+                </p>
                 <div className="bg-blue-600 rounded-full p-1">
                   <Check className="w-4 h-4" />
                 </div>
               </div>
 
-              <div className="bg-background rounded flex flex-col items-center justify-center py-2 px-3 w-auto">
-                <span className="mb-1 text-md font-semibold text-black">
-                  Others
-                </span>
+              <div className="bg-background rounded flex flex-col items-center justify-center py-1 px-2 w-auto shadow border">
+                <p className="mb-1 text-md font-semibold text-black">Others</p>
                 <div className="bg-red-600 rounded-full p-1">
                   <X className="w-4 h-4" />
                 </div>
               </div>
             </div>
 
-            <div className="bg-why-choose-us rounded py-2 px-4 text-sm text-why-choose-us-text text-start">
-              15-day unconditional guarantee
+            <hr className="bg-[#323232] mb-2 -mt-2" />
+
+            <div className="bg-why-choose-us rounded py-2 px-4 text-xs text-wrap text-why-choose-us-text text-start font-semibold shadow">
+              <span className="text-[10px]">
+                15-day unconditional guarantee
+              </span>
             </div>
           </div>
         </div>
 
         <div className="text-center mt-12">
-          <h2 className="text-2xl font-bold mb-6 text-button-text">
+          <h2 className="text-base md:text-base font-medium mb-4 text-button-text">
             Ready to experience the HighPaidJobs difference?
           </h2>
-          <Button className=" bg-all-button hover:bg-all-button-hover text-all-button-text text-lg font-semibold py-1 px-4 rounded-full transition-colors duration-300 cursor-pointer">
-            Book Free Consultation
-            <ChevronRight className="translate-y-0.5" />
-          </Button>
+          <Link href="#contactForm">
+            <div className="flex justify-center">
+              <Button className="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium bg-all-button hover:bg-all-button-hover text-all-button-text py-2 px-6 rounded-full transition-colors duration-300 cursor-pointer">
+                <span className="flex items-center">
+                  Book Free Consultation
+                  <ChevronRight className="ml-2 h-5 w-5 translate-x-0.5" />
+                </span>
+              </Button>
+            </div>
+          </Link>
         </div>
       </Container>
     </div>
